@@ -1,0 +1,171 @@
+div.resotre {
+	padding: 10px;
+}
+
+div.resotre div.progress {
+	display: block;
+	float: right;
+	background-color: #AAAAAA;
+	position: relative;
+	border-radius: 2px;
+	height: 5px;
+	width: 100px;
+	margin: 6px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+div.resotre div.progress > div.bar1 {
+	background-image:
+		-webkit-linear-gradient(top, 
+			rgba(255, 255, 255, .25), 
+			rgba(0, 0, 0, .25)),
+		-webkit-linear-gradient(left, #5a4, #8b5);
+	background-size: 100% 100%, 100% 100%;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+    display: block;
+    height: 5px;
+}
+div.resotre div.progress > div.bar2 {
+	background-image:
+		-webkit-linear-gradient(top, 
+			rgba(255, 255, 255, .25), 
+			rgba(0, 0, 0, .25)),
+		-webkit-linear-gradient(left, #8b5, #f33);
+	background-size: 100% 100%, 100% 100%;
+	display: block;
+	position: absolute;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	top: 0px;
+	left: 30%;
+	height: 5px;
+}
+
+div.resotre > div.title {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	color: #f85;
+	text-shadow: 0px 0px 1px;
+	font-weight: bold;
+}
+
+div.resotre div.summary {
+	float: right;
+	margin-left: 5px;
+}
+div.resotre div.summary > div {
+	width: 120px;
+	padding: 10px;
+	margin: 2px;
+}
+div.resotre div.summary > div:not(.operate) {
+	font-size: .8em;
+	background: rgba(255, 255, 255, .5);
+	color: #444;
+	border-radius: 5px;
+	height: 30px;
+}
+div.resotre div.operate {
+	background: transparent;
+}
+div.resotre div.operate button[disabled] {
+	-webkit-filter: grayscale(1) opacity(0.5);
+}
+div.resotre div.operate button[disabled]::before {
+	content: '請選擇還原資料';
+}
+div.resotre div.operate button:not([disabled])::before {
+	content: '立即還原';
+}
+div.resotre div.operate button {
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	position: relative;
+	background: #014464;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C));
+	border-radius: 5px;
+	border: 1px solid #368DBE;
+	border-top: 1px solid #c3d6df;
+	text-shadow: 1px 1px 1px black;
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 2px 6px black;
+	box-shadow: 0 1px 3px black;
+	margin: auto;
+	cursor: pointer;
+}
+div.resotre div.operate button:hover {  
+	background: #014464;  
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(.5, #0b5273), color-stop(.51, #024869), to(#003853));  
+}
+div.resotre div.operate button:active {
+	-webkit-box-shadow: 0 1px 3px black;
+	margin-top: 1px;
+}
+
+div.resotre > div.list {
+	overflow-y: auto;
+	height: 180px;
+}
+div.resotre > div.list > div.dir {
+	background: #ddd;
+	color: #666;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(top, #eee 0%, #ddd 50%, #ccc 50%, #ddd);
+	overflow: auto;
+	cursor: pointer;
+	padding: 5px;
+	margin-bottom:2px; 
+}
+div.resotre div.list div.dir.select {
+	background-image: -webkit-linear-gradient(top, #fdb 0%, #eca 50%, #db9 50%, #eca);
+	position: relative;
+}
+div.resotre div.list div.dir.select::before {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url(../../images/apply.png);
+	content: '';
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+div.resotre > div.list > div.dir > div {
+	float: left;
+	font-size: .8em;
+	line-height: 20px;
+}
+div.resotre > div.list > div.dir > div:nth-child(1) {
+	width: 25%;
+	padding-left: 40px;
+	word-wrap: 
+	break-word; 
+	word-break: normal;
+}
+div.resotre > div.list > div.dir > div:nth-child(1)[os=win] {
+	background: url(../../images/win.png) center left no-repeat;
+}
+div.resotre > div.list > div.dir > div:nth-child(1)[os=osx] {
+	background: url(../../images/osx.png) center left no-repeat;
+}
+div.resotre > div.list > div.dir > div:nth-child(2) {
+	width: 30%;
+	margin-right: 10px;
+	padding: 0px 5px;
+	background: rgba(255, 255,255,.7);
+	box-shadow: 0px 0px 1px #333;
+	word-wrap: 
+	break-word; 
+	word-break: normal;
+}
+div.resotre > div.list > div.dir > div:nth-child(3) {
+	width: 30%;
+}

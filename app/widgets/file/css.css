@@ -1,0 +1,72 @@
+div.backupState > div.content > #fileList {
+	color: #ccc;
+	float: left;
+	width: 250px;
+}
+
+div.backupState > div.content > #fileList > div#icon {
+	background-size: 64px 64px;
+	float: left;
+	height: 64px;
+	position: relative;
+	width: 64px;
+}
+
+div.backupState > div.content > #fileList > div#icon > img#img {
+	bottom: 8px;
+	left: 12px;
+	position: absolute;
+	height: 26px;
+	width: 26px;
+}
+
+div.backupState > div.content > #fileList > div#icon > img.wait {
+	-webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+div.backupState > div.content > #fileList > div#list_id {
+	clear: left;
+	display: none;
+}
+
+div.backupState > div.content > #fileList > div.name {
+	display: none;
+}
+
+div.backupState > div.content > #fileList > div.visual_name {
+	color: #fff;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+div.backupState > div.content > #fileList > div.type {
+	display: none;
+}
+
+div.backupState > div.content > #fileList > div.visual_type {
+	font-size: .9em;
+}
+
+div.backupState > div.content > #fileList > div.file {
+	background-image: url(../../images/file.png);
+}
+
+div.backupState > div.content > #fileList > div.folder {
+	background-image: url(../../images/folder.png);
+}
+
+div.backupState > div.content > #fileList > div.size {
+	display: none;
+}
+
+div.backupState > div.content > #fileList > div.state {
+	display: none;
+}

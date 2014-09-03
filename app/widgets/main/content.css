@@ -1,0 +1,24 @@
+div.main-body > div.content {
+	display: none;
+	height: 292px;
+	overflow: hidden;
+}
+div.main-body.app > div.content {
+	display: block;
+	width: 100%;
+}
+div.main-body.app > div.content.animate {
+	width: 300%;
+}
+
+div.main-body > div.content > div {
+	float: left;
+	width: 800px;
+	height: 100%;
+	background: -webkit-gradient(	linear, left center, right center, 
+					color-stop(0.0, #ccc), 
+					color-stop(0.1, #ddd),
+					color-stop(0.5, #fff),
+					color-stop(0.9, #ddd),
+  					color-stop(1.0, #ccc));
+}

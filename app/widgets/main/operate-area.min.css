@@ -1,0 +1,141 @@
+div.main-body.app > div.operate-area {
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 0px;
+	overflow: auto;
+	background: -webkit-gradient(	linear, center top, center bottom, 
+					color-stop(0.0, #666), 
+					color-stop(0.5, #555),
+					color-stop(0.5, #444),
+  					color-stop(1.0, #333));
+}
+div.main-body.app > div.operate-area > div.app:nth-child(n+2) {
+	position: relative;
+	-webkit-filter: grayscale(30%) brightness(0.5);
+}
+div.main-body.app > div.operate-area > div.app.select {
+}
+div.main-body.app > div.operate-area > div.app > div {
+	width: 30px;
+	height: 30px;
+	padding: 2px 2px;
+	margin: 2px;
+	border-radius: 3px;
+}
+div.main-body.app > div.operate-area > div.app.select {
+	-webkit-filter: grayscale(0%) brightness(.9);
+}
+div.main-body.app > div.operate-area > div.app:nth-child(n+2):not(.select):hover {
+	border-bottom: 3px solid #38a;
+	-webkit-filter: grayscale(0%) brightness(1);
+}
+div.main-body.app > div.operate-area > div.app:hover > div {
+	background: transparent;
+}
+div.main-body.app > div.operate-area > div.app:hover > div > div.icon {
+	box-shadow: 0px 0px 0px #333;
+}
+div.main-body.app > div.operate-area > div.app:hover > div > div.title {
+	display: none;
+}
+div.main-body.app > div.operate-area > div.app:hover > div.info {
+	display: none;
+}
+div.main-body.app > div.operate-area > div.app > div > div.icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 0px #333;
+}
+div.main-body.app > div.operate-area > div.app:nth-child(1) {
+	display: block;
+}
+div.main-body.app > div.operate-area > div.app:nth-child(1) > div > div.icon {
+	background: url(./images/home.min.png);
+}
+div.main-body.app > div.operate-area > div.app:nth-child(2) > div > div.icon {
+	background: url(./images/backup.min.png);
+}
+div.main-body.app > div.operate-area > div.app:nth-child(3) > div > div.icon {
+	background: url(./images/config.min.png);
+}
+div.main-body.app > div.operate-area > div.app:nth-child(4) > div > div.icon {
+	background: url(./images/restore.min.png);
+}
+div.main-body.app > div.operate-area > div.app:nth-child(5) > div > div.icon {
+	background: url(./images/status.min.png);
+}
+div.main-body.app > div.operate-area > div.app > div > div.title {
+	display: none;
+}
+div.main-body.app > div.operate-area > div.app > div.info {
+	display: none;
+}
+div.main-body.app > div.operate-area > div.app > div.info::before {
+	display: none;
+}
+
+div.main-body.app > div.operate-area > div.addition {
+	float: right;
+	display: block;
+	font-size: .8em;
+	color: #ccc;
+	text-align: right;
+	padding: 5px;
+}
+div.main-body.app > div.operate-area > div.addition > div {
+	overflow: auto;
+}
+div.main-body.app > div.operate-area > div.addition > div.barChart {
+	float: right;
+	display: block;
+	height: 5px;
+	border-radius: 5px;
+	width: 100px;
+	background: -webkit-gradient(linear,center top,center bottom, from(#888888), to(#AAAAAA));
+	margin: 5px;
+	box-shadow: 0px 0px 2px #111;
+}
+div.main-body.app > div.operate-area > div.addition > div.barChart > div.bar {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#229955), color-stop(50%,#44bb66), color-stop(51%,#33aa55), color-stop(100%,#44bb66));
+	display: block;
+	height: 100%;
+	border-radius: 5px;
+}
+
+div.main-body.app > div.operate-area > div.addition > div > progress {
+	display: block;
+	float: right;
+	background-color: #AAAAAA;
+	position: relative;
+	border-radius: 2px;
+	height: 5px;
+	width: 100px;
+	margin: 6px;
+}
+div.main-body.app > div.operate-area > div.addition > div > progress::-webkit-progress-bar {
+	background-color: #AAAAAA;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+div.main-body.app > div.operate-area > div.addition > div > progress::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #fa8, #f83);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+div.main-body.app > div.operate-area > div.addition > div > progress[value]::before {
+	content: attr(value)'%';
+	position: absolute;
+	left: -30px;
+	top: -5px;
+}

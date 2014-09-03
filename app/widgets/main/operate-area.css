@@ -1,0 +1,98 @@
+div.main-body > div.operate-area {
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+}
+div.main-body > div.operate-area > div.app {
+	overflow: auto;
+	float: left;
+}
+div.main-body:not(.app) > div.operate-area > div.app {
+	/*
+	margin-top: 50px;
+	*/
+}
+div.main-body > div.operate-area > div.app > div {
+	width: 100px;
+	height: 100px;
+	padding: 30px 40px;
+	margin: 3px;
+	border-radius: 10px;
+}
+div.main-body:not(.app) > div.operate-area > div.app:hover {
+	margin-top: 0px;
+}
+div.main-body > div.operate-area > div.app:hover > div {
+	background: rgba(255, 255, 255, .5);
+}
+div.main-body > div.operate-area > div.app:hover > div > div.icon {
+	box-shadow: 0px 0px 5px #333;
+}
+div.main-body > div.operate-area > div.app:hover > div > div.title {
+	color: #333;
+	text-shadow: 0px 1px 0px #69c;
+}
+div.main-body > div.operate-area > div.app:hover > div.info {
+	display: block;
+}
+div.main-body > div.operate-area > div.app > div > div.icon {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px #333;
+}
+div.main-body > div.operate-area > div.app:nth-child(1) {
+	display: none;
+}
+div.main-body > div.operate-area > div.app:nth-child(2) > div > div.icon {
+	background: url(./images/backup.png);
+}
+div.main-body > div.operate-area > div.app:nth-child(3) > div > div.icon {
+	background: url(./images/config.png);
+}
+div.main-body > div.operate-area > div.app:nth-child(4) > div > div.icon {
+	background: url(./images/restore.png);
+}
+div.main-body > div.operate-area > div.app:nth-child(5) > div > div.icon {
+	background: url(./images/status.png);
+}
+div.main-body > div.operate-area > div.app > div > div.title {
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0px 1px 0px #666;
+	line-height: 2em;
+}
+div.main-body > div.operate-area > div.app > div.info {
+	display: none;
+	color: #fff;
+	font-size: .8em;
+	text-align: left;
+	width: 120px;
+	height: 40px;
+	position: relative;
+	margin-top: 14px;
+	margin-left: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #333;
+	padding: 20px;
+	background: -webkit-gradient(	linear, center top, center bottom, 
+					color-stop(0.0, #666), 
+  					color-stop(1.0, #444));
+}
+div.main-body > div.operate-area > div.app > div.info::before {
+	border-width: 7px 10px;
+	border-color: transparent transparent #666 transparent;
+	border-style: solid;
+	content: '';
+	position: absolute;
+	top: 0px;
+	margin-top: -14px;
+	margin-left: 50px;
+}
+
+div.main-body > div.operate-area > div.addition {
+	display: none;
+}

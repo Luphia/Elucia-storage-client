@@ -1,0 +1,22 @@
+div.backupState > div.table > div.sort {
+    float: left;
+    padding-top: 7px;
+    padding-left: 25px;
+    width: 80px;
+}
+
+div.backupState > div.table > div.sort > div {
+    float: left;
+}
+
+div.backupState > div.table > div.sort > div.rule {
+    cursor: pointer; 
+}
+
+div.backupState > div.table > div.sort > div#icon {
+    background-image: url(../../images/sort.png); 
+    background-size: 16px 16px;
+    display: none;
+    height: 16px;
+    width: 16px;
+}

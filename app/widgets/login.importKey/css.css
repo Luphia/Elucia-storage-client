@@ -1,0 +1,24 @@
+div.importKey {
+	color: #fff;
+	width: 400px;
+	height: 200px;
+	background: url(./images/keyhole.png) center center no-repeat;
+	position: relative;
+}
+
+div.importKey.over {
+	background: url(./images/keyhole-on.png) center center no-repeat;
+}
+
+div.importKey.check::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(./images/check.png) 190 center no-repeat;
+}
+
+div.importKey > div {
+	text-align: center;
+}

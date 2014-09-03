@@ -1,0 +1,239 @@
+div.backup {
+	padding: 10px;
+}
+
+div.backup div.progress {
+	display: block;
+	float: right;
+	background-color: #AAAAAA;
+	position: relative;
+	border-radius: 2px;
+	height: 5px;
+	width: 100px;
+	margin: 6px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+div.backup div.progress > div.bar1 {
+	background-image:
+		-webkit-linear-gradient(top, 
+			rgba(255, 255, 255, .25), 
+			rgba(0, 0, 0, .25)),
+		-webkit-linear-gradient(left, #fa8, #f83);
+	background-size: 100% 100%, 100% 100%;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+    display: block;
+    height: 5px;
+}
+div.backup div.progress > div.bar2 {
+	background-image:
+		-webkit-linear-gradient(top, 
+			rgba(255, 255, 255, .25), 
+			rgba(0, 0, 0, .25)),
+		-webkit-linear-gradient(left, #f83, #f33);
+	background-size: 100% 100%, 100% 100%;
+	display: block;
+	position: absolute;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	top: 0px;
+	left: 30%;
+	height: 5px;
+}
+
+div.backup > div.title {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	color: #f85;
+	text-shadow: 0px 0px 1px;
+	font-weight: bold;
+}
+
+div.backup > div.title > a.clickable
+{
+	cursor: pointer;
+}
+
+div.backup div.summary {
+	float: right;
+	margin-left: 5px;
+}
+div.backup div.summary > div {
+	width: 120px;
+	padding: 10px;
+	margin: 2px;
+}
+div.backup div.summary > div:not(.operate) {
+	font-size: .8em;
+	background: rgba(255, 255, 255, .5);
+	color: #444;
+	border-radius: 5px;
+	height: 30px;
+}
+div.backup div.operate {
+	background: transparent;
+	float: left;
+	width: 500px;
+	margin-left: 50px;
+}
+
+div.backup div.operate button[disabled] {
+	-webkit-filter: grayscale(1) opacity(0.5);
+}
+div.backup div.operate button[disabled]::before {
+	content: '請選擇備份目錄';
+}
+div.backup div.operate button:not([disabled])::before {
+	content: '立即備份';
+}
+
+div.backup div.delete
+{
+	float: left;
+	background: url(../../images/trashCan.png) no-repeat;	
+	width: 50px;
+	height: 50px;
+	margin-left: -100px;
+	cursor: pointer;
+	position: relative;
+}
+
+div.backup div.operate button
+{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	position: relative;
+	background: #014464;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C));
+	border-radius: 5px;
+	border: 1px solid #368DBE;
+	border-top: 1px solid #c3d6df;
+	text-shadow: 1px 1px 1px black;
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 2px 6px black;
+	box-shadow: 0 1px 3px black;
+	margin: auto;
+	cursor: pointer;
+}
+div.backup div.operate button:not([disabled]):hover {  
+	background: #014464;  
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(.5, #0b5273), color-stop(.51, #024869), to(#003853));  
+}
+div.backup div.operate button:not([disabled]):active {
+	-webkit-box-shadow: 0 1px 3px black;
+	margin-top: 1px;
+}
+
+div.backup > div.list {
+	overflow-y: auto;
+	height: 180px;
+}
+div.backup > div.list > div.dir {
+	background: #ddd;
+	color: #666;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(top, #eee 0%, #ddd 50%, #ccc 50%, #ddd);
+	overflow: auto;
+	cursor: pointer;
+	padding: 5px;
+	margin-bottom: 2px; 
+	position: relative;
+}
+
+div.backup > div.list > div.dir::after {
+	content: 'i';
+	position: absolute;
+	border: solid 1px #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	text-align: center;
+	background: rgba(255,255,255,.5);
+	font-size: 1em;
+	right: 75px;
+	top: 5px;
+}
+
+div.backup > div.list > div.dir > div {
+	line-height: 40px;
+}
+div.backup > div.list > div.dir > div:nth-child(3) {
+	line-height: 20px;
+	font-size: .8em;
+}
+div.backup div.list div.dir.select {
+	background-image: -webkit-linear-gradient(top, #fdb 0%, #eca 50%, #db9 50%, #eca);
+	position: relative;
+}
+div.backup div.list div.dir.select::before {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url(../../images/apply.png);
+	content: '';
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+
+/*div.backup div.list div.dir div.select
+{
+	background-image: -webkit-linear-gradient(top, #fdb 0%, #eca 50%, #db9 50%, #eca);
+}
+
+div.backup div.list div.dir div.select,
+div.backup div.list div.dir.delete
+{	
+	position: relative;
+}
+
+div.backup div.list div.dir div.select::before,
+div.backup div.list div.dir div.delete::before
+{
+	width: 30px;
+	height: 30px;
+	display: block;
+
+	content: '';
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+div.backup div.list div.dir div.select::before
+{
+	background: url(../../images/apply.png);
+}
+	
+
+div.backup div.list div.dir.delete::before 
+{
+	background: url(../../images/delete.png);
+}*/
+
+div.backup div.list div.dir > div {
+	float: left;
+}
+div.backup div.list div.dir > div:nth-child(1) {
+	width: 50%;
+	word-break: break-all; 
+	line-height: 1.6em;
+	font-size: .8em;
+}
+div.backup div.list div.dir > div:nth-child(2) {
+	float: left;
+	width: 20%;
+	text-shadow:0px 1px 0px;
+}
+div.backup div.list div.dir > div:nth-child(3) {
+	float: left;
+	width: 30%;
+}

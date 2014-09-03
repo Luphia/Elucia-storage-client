@@ -1,0 +1,40 @@
+div.setting {
+
+}
+
+div.setting > div {
+	float: left;
+	padding-left: 5px;
+}
+
+div.setting > button {
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	position: relative;
+	background: #014464;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C));
+	border-radius: 5px;
+	border: 1px solid #368DBE;
+	border-top: 1px solid #c3d6df;
+	text-shadow: 1px 1px 1px black;
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 2px 6px black;
+	box-shadow: 0 1px 3px black;
+	margin: auto;
+	margin-top: 20px;
+	cursor: pointer;
+}
+div.setting >:hover {  
+	background: #014464;  
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(.5, #0b5273), color-stop(.51, #024869), to(#003853));  
+}
+div.setting >:active {
+	-webkit-box-shadow: 0 1px 3px black;
+	margin-top: 1px;
+}

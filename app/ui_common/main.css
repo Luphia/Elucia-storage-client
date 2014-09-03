@@ -1,0 +1,151 @@
+body {
+	font-family: courier, 微軟正黑體;
+	background: url(../images/pattern.png) rgba(30,30,30,.5);
+	margin: 0px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+body.lock {
+	-webkit-filter: blur(5px);
+}
+body.lock::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	z-index: 9999;
+	-webkit-app-region:no-drag;
+}
+
+div.clickable {
+	cursor: pointer;
+}
+
+body > div.header {
+	background: rgba(30, 30, 30, .8);
+	color: #fff;
+	width: 100%;
+	overflow: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+
+	/*drag window*/
+	-webkit-user-select: none;
+	-webkit-app-region:drag;
+}
+body > div.header > div.title {
+	color: #0bf;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+body > div.header > div.controll {
+	float: right;
+	-webkit-app-region: no-drag;
+}
+body > div.header > div.controll > div {
+	float: left;
+	width: 20px;
+	margin-left: 2px;
+	-webkit-app-region: no-drag;
+}
+body > div.header > div.controll > div::before {
+	font-size: 1.2em;
+	color: #aaa;
+	font-weight: bold;
+}
+body > div.header > div.controll > div:hover:before {
+	color: #fa0;
+}
+body > div.header div.controll div.minimize {
+
+}
+body > div.header div.controll div.minimize::before {
+	content: '-';
+}
+body > div.header div.controll div.fullscreen::before {
+	content: '□';
+}
+body > div.header div.controll div.close::before {
+	content: 'x';
+}
+body > div.header div.controll div.dev::before {
+	content: '#';
+}
+body > div.header div.controll div.file::before {
+	content: 'f';
+}
+body > div.header div.controll div.question::before {
+	content: 'q';
+}
+
+body > div.main {
+/*
+	overflow: auto;
+*/
+}
+
+
+
+body > div.footer {
+	color: #ddd;
+	font-size: .9em;
+	padding: 5px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+	background: -webkit-gradient(	linear, center top, center bottom, 
+					color-stop(0.0, #666), 
+					color-stop(0.5, #555),
+					color-stop(0.5, #444),
+  					color-stop(1.0, #333));
+}
+body > div.footer > div.user {
+	float: right;
+	padding-right: 10px;
+}
+body > div.footer > div.version {
+	float: left;
+	padding-left: 10px;
+}
+body > div.footer > div.key {
+	display: block;
+	width: 40px;
+	height: 17px;
+	float: right;
+	margin-right: 10px;
+	-webkit-transform: rotate(-45deg);
+}
+body > div.footer > div.key.save:not(.unsave) {
+	background: url(../images/key.png) no-repeat;
+}
+body > div.footer > div.key.save:not(.unsave):hover:before {
+	content: '金鑰已託管';
+	position: absolute;
+	width: 80px;
+	text-align: center;
+	margin-top: -60px;
+	margin-left: -40px;
+	background: rgba(60, 60, 60, .5);
+	padding: 3px;
+	border-radius: 3px;
+	-webkit-transform: rotate(45deg);
+}
+body > div.footer > div.key.unsave {
+	background: url(../images/keyless.png) no-repeat;
+}
+body > div.footer > div.key.unsave:hover:before {
+	content: '金鑰未託管';
+	position: absolute;
+	width: 80px;
+	text-align: center;
+	margin-top: -60px;
+	margin-left: -40px;
+	background: rgba(60, 60, 60, .5);
+	padding: 3px;
+	border-radius: 3px;
+	-webkit-transform: rotate(45deg);
+}

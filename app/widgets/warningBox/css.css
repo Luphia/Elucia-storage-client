@@ -1,0 +1,36 @@
+.warningBox {
+	font-family: Calibri;
+	text-align: center;
+
+	width: 500px;
+	position: fixed;
+	left: 50%;
+	top: 30%;
+	margin-left: -250px;
+	padding: 20px;
+
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px;
+	background: rgba(255, 245, 245, 0.8);
+
+    -webkit-box-shadow: 0 0 6px rgba(30, 30, 30, 0.8);
+	box-shadow: 0 0 6px rgba(30, 30, 30, 0.8);
+
+	z-index: 99999;
+}
+
+.warningBox  .warningMsg {
+	background: rgb(250, 230, 230);
+	border: 1px solid rgb(230, 200, 200);
+	border-radius: 5px;
+	color: #d66;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.warningBox button {
+	line-height: 2em;
+	width: 10em;
+	margin-left: 10px;
+	margin-right: 10px;
+}

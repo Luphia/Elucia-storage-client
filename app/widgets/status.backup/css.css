@@ -1,0 +1,25 @@
+div.backup_detail {
+	color: #fff;
+	height: 300px;
+	padding: 10px;
+}
+
+div.backup_detail > div.fileList {
+	overflow-y: auto;
+	height: 180px;
+}
+
+div.backup_detail > div.fileList > div.file {
+	background: #ddd;
+	background-image: -webkit-linear-gradient(top, #eee 0%, #ddd 50%, #ccc 50%, #ddd);
+	border-radius: 3px;
+	color: #666;
+	margin-bottom:2px;	
+	overflow: auto;
+	padding: 5px;	
+}
+
+div.backup_detail > div.fileList > div.file > div.name {
+	float: left;
+	width: 400px;
+}

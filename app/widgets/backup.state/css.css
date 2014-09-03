@@ -1,0 +1,27 @@
+div.backupState {
+	overflow: auto;
+	display: block;
+	height: 300px;
+}
+
+div.backupState > div.table {
+	background: linear-gradient(to bottom, 
+		rgba(235,241,246,1) 0%,
+		rgba(171,211,238,1) 32%,
+		rgba(137,195,235,1) 51%,
+		rgba(213,235,251,1) 100%);
+	display: block;
+	line-height: 15px;
+	width: 100%;
+	height: 30px;
+}
+
+div.backupState > div.table > div.count {
+	padding-top: 7px;
+	float: left;
+}
+
+div.backupState > div.table > div.space {
+	margin-left: 520px;
+	padding-top: 7px;
+}

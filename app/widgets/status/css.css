@@ -1,0 +1,77 @@
+div.status {
+	padding: 10px;
+}
+
+div.status > div.title {
+	color: #f85;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0px 0px 1px;	
+}
+
+div.status > div.backup_title {
+	float: left;
+}
+
+div.status > div.backup_lastestDay {
+	color: #888;
+	font-size: 12px;
+	margin-left: 90px;
+}
+
+div.status > div.backup_list {
+	clear: left;
+	height: 90px;
+	overflow-y: auto;
+}
+
+div.status > div.backup_list > div.dir {
+	background: #ddd;
+	color: #666;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(top, #eee 0%, #ddd 50%, #ccc 50%, #ddd);
+	overflow: auto;
+	cursor: pointer;
+	padding: 5px;
+	margin-bottom:2px; 
+}
+
+div.status > div.backup_list > div.dir > div.date {
+	float: left;
+	width: 220px;
+}
+
+div.status > div.backup_list > div.dir > div.capacity {
+	float: left;
+	font-weight: 900;
+	width: 300px;
+}
+
+div.status > div.restore_list {
+	overflow-y: auto;
+	height: 90px;
+}
+
+div.status > div.restore_list > div.dir {
+	background: #ddd;
+	color: #666;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(top, #eee 0%, #ddd 50%, #ccc 50%, #ddd);
+	overflow: auto;
+	cursor: pointer;
+	padding: 5px;
+	margin-bottom:2px; 
+}
+
+div.status > div.restore_list > div.dir > div.date {
+	float: left;
+	width: 220px;
+}
+
+div.status > div.restore_list > div.dir > div.capacity {
+	float: left;
+	font-weight: 900;
+	width: 300px;
+}

@@ -1,0 +1,90 @@
+div.setting 
+{
+	color: #000;
+	padding: 30px;
+	width: 420px;
+	height: 300px;
+}
+
+div.setting > div
+{
+	height: 270px;
+	color: #fff;
+}
+
+div.setting > div.menuDiv
+{
+	width: 120px;
+	float: left;
+	color: gray;
+}
+
+div.setting > div.contentDiv
+{
+	width: 260px;
+	float: left;
+}
+
+div.setting > div.menuDiv > div
+{
+	cursor: pointer;
+	padding: 5px;
+	margin-top: 2px;
+	width: 86%;
+	background-color: #EBF5FF;
+	border-radius: 3px;
+}
+
+div.setting > div.menuDiv > div.selected
+{
+	font-weight: bolder;
+	color: #000;
+	border: 2px solid yellow;
+}
+
+div.setting > div.contentDiv > div.authData
+{
+	display: none;
+}
+
+div.setting > div.contentDiv table.setting
+{
+	width: 95%;
+	color: #fff;
+}
+
+div.setting  > div.contentDiv table.setting tr > td:nth-child(1)
+{
+	white-space: nowrap;
+}
+
+div.setting div.contentDiv table.setting tr > td input[name=sendData]
+{
+	float: right;
+	margin-right: 4px;
+}
+
+
+/*div.setting > table.setting
+{
+	width: 95%;
+	color: #fff;
+}
+
+div.setting > table.setting tr > td:nth-child(1)
+{
+	width: 100px;
+}
+
+div.setting > table.setting tr > td input[name=sendData]
+{
+	float: right;
+	margin-right: 20px;
+}
+
+div.setting > table.setting tr > td input[name=sendData]::after
+{
+	clear: both;
+}*/
+
+

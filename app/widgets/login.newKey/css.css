@@ -1,0 +1,36 @@
+div.newKey {
+	color: #fff;
+	width: 500px;
+	height: 250px;
+	position: relative;
+	background: rgba(230, 190, 150, .2);
+	overflow: auto;
+}
+
+div.newKey div.info > div {
+	margin: 20px 10px;
+}
+
+div.newKey div.choose > div {
+	width: 198px;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+	margin: 0px 25px;
+
+	color: white;
+	font-size: 1.2em;
+	display: block;
+	text-align: center;
+	position: relative;
+	background: #014464;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C));
+	border-radius: 5px;
+	border: 1px solid #368DBE;
+	border-top: 1px solid #c3d6df;
+	text-shadow: 1px 1px 1px black;
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 2px 6px black;
+	box-shadow: 0 1px 3px black;
+	cursor: pointer;
+}

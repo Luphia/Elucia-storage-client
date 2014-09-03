@@ -1,0 +1,70 @@
+body {
+	font-family: courier, 微軟正黑體;
+	background: rgba(30, 30, 30, .8);
+	margin: 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: -webkit-gradient(	linear, left center, right center, 
+					color-stop(0.0, #222), 
+					color-stop(0.1, #333),
+					color-stop(0.5, #555),
+					color-stop(0.9, #333),
+  					color-stop(1.0, #222));
+}
+
+div.clickable {
+	cursor: pointer;
+}
+
+div.header {
+	background: rgba(30, 30, 30, .8);
+	color: #fff;
+	width: 100%;
+	overflow: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+
+	/*drag window*/
+	-webkit-user-select:none;
+	-webkit-app-region:drag;
+}
+div.header > div.title {
+	color: #0bf;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+div.header > div.controll {
+	float: right;
+}
+div.header > div.controll > div {
+	float: left;
+	width: 20px;
+	margin-left: 2px;
+	-webkit-app-region: no-drag;
+}
+div.header > div.controll > div::before {
+	font-size: 1.2em;
+	color: #aaa;
+	font-weight: bold;
+}
+div.header > div.controll > div:hover:before {
+	color: #fa0;
+}
+div.header div.controll div.minimize {
+
+}
+div.header div.controll div.minimize::before {
+	content: '-';
+}
+div.header div.controll div.close::before {
+	content: 'x';
+}
+div.header div.controll div.dev::before {
+	content: '#';
+}
+
+
+div.main-body {
+
+}
